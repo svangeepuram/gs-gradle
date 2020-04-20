@@ -35,7 +35,7 @@ dependencies {
 publishing {
     publications {
         jar(MavenPublication) {
-            groupId 'academy.newtech'
+            groupId 'org.svangeeouram'
             artifactId 'gs-gradle'
             version '1.0'
             from components.java
@@ -62,7 +62,7 @@ allprojects {
 artifactory {
     publish {
         repository {
-            repoKey = 'gradle-dev-local'
+            repoKey = 'gradle-repo'
             maven = true
         }
         defaults {
@@ -73,7 +73,7 @@ artifactory {
     }
     resolve {
         repository {
-            repoKey = 'gradle-dev'
+            repoKey = 'gradle-repo'
             maven = true
 
         }
