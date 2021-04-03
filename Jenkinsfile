@@ -1,5 +1,5 @@
 node {
-  //def server = Artifactory.server 'svangeepuram.jfrog.io'
+  def server = Artifactory.server 'srivathsalachary.jfrog.io'
   def myGradleContainer = docker.image('gradle:jdk8')
   myGradleContainer.pull()
   stage('prep') {
@@ -15,7 +15,7 @@ node {
        sh 'cd complete && ./gradlew test'
      }
   }
-  /*stage('publish') {
+  stage('publish') {
     def uploadSpec = """{
       "files": [
         {
@@ -25,5 +25,5 @@ node {
      ]
     }"""
     server.upload(uploadSpec)
-  }*/
+  }
 }
