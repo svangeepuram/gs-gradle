@@ -46,7 +46,8 @@ publishing {
 // artifactory configuration
 buildscript {
     repositories {
-        jcenter()
+        //jcenter()
+        mavenCentral()
 
     }
     dependencies {
