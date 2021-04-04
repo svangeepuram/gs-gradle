@@ -6,13 +6,13 @@ buildscript {
     }
     dependencies {
         //Check for the latest version here: http://plugins.gradle.org/plugin/com.jfrog.artifactory
-        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4+"
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.21.0"
     }
 }
 
 
 plugins {
-    id 'com.jfrog.artifactory' version '4.21.0'
+    id 'com.jfrog.artifactory'
 }
 
 apply plugin: 'java'
