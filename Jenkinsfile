@@ -20,7 +20,7 @@ node {
       "files": [
         {
           "pattern": "complete/build/libs/gs-gradle-*.jar",
-          "target": "gradle-repo/org/svangeepuram/gs-gradle/1.0/gs-gradle-1.0-docker.jar"
+          "target": "jenkins-gradle-dev-local/org/svangeepuram/gs-gradle/1.0/gs-gradle-1.0-docker.jar"
         }
      ]
     }"""
