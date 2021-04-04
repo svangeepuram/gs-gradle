@@ -56,7 +56,9 @@ buildscript {
 }
 
 allprojects {
-    apply plugin: "com.jfrog.artifactory"
+    plugins {
+     id 'com.jfrog.artifactory' 
+    }
 }
 
 artifactory {
