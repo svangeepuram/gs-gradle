@@ -23,8 +23,8 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    implementation "joda-time:joda-time:2.2"
-    testImplementation "junit:junit:4.12"
+    compile "joda-time:joda-time:2.2"
+    compileTest "junit:junit:4.12"
 }
 // end::dependencies[]
 
