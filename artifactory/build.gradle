@@ -1,3 +1,8 @@
+
+plugins {
+    id 'com.jfrog.artifactory' version '4.21.0' apply false
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
@@ -55,9 +60,6 @@ buildscript {
     }
 }
 
-plugins {
-    id 'com.jfrog.artifactory' version '4.21.0' apply false
-}
 
 allprojects {
     apply plugin: 'com.jfrog.artifactory'
